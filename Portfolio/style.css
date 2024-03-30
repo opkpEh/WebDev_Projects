@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+nav{
+    padding: 20px 148px;
+    background-color: rgb(225, 249, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+    nav .logo{
+        display: flex;
+        align-items: center;
+    }
+
+nav .logo img{
+    width: 110px;
+    border-radius: 25%;
+}
+
+nav .logo a{
+    font-size: 15px;
+    color: #3e3e3e;
+    font-weight: bold;
+    margin-left: 10px ;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 16px;
+} 
+nav .nav-links a{
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a.selected{
+    color: #D81E5B;
+}
+
+nav .nav-links a:hover{
+    color: blue;
+}
+
+.main{
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.main img{
+    width: 400px;
+    border-radius: 140px;
+    
+}
+
+.main .info h1{
+    font-size:44px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.main .info p{
+    font-size: 16px;
+    font-weight: 600px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.main .info button{
+    height:50px;
+    width: 200px;
+    display:flex;
+    align-items: center;
+    background-color: rgb(225, 249, 250);
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: color background 0.5s ease;
+}
+
+.main .info button img{
+    width: 25px;
+    display: flex;
+    margin-left: 13px;
+}
+
+.main .info button:hover{
+    background : blue;
+    color : white;
+}
+
+.recent{
+    padding: 60px 148px;
+    background-color: #dbedf2;
+}
+
+.recent .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.recent .header h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.recent .header a{
+    color : #303f9f;
+}
+
+.recent .posts{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recent .posts .post-item{
+    background-color: #edf1ef;
+    padding: 24px;
+}
+
+.recent .posts .post-item h3{
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.recent .posts .post-item .info{
+    margin-bottom: 9px;
+
+}
+
+.recent .posts .post-item .info p{
+    font-weight: 900;
+}
+
+footer {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .socials{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+footer .socials i{
+    font-size: 40px;
+    cursor: pointer;
+    transform: color 1s ease;
+}
+
+footer .socials .insta i:hover{
+    color: #cd375f;
+}
+
+footer .socials .fb i:hover{
+    color: #316FF6;
+}
+
+footer .socials .linkedin i:hover{
+    color: #017bbd;
+}
+
+footer .socials .mail i:hover{
+    color: #c71610;
+}
+
+.page-title{
+    padding: 80px 234px 20px;
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    padding : 30px 148px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-list .item{
+    display: flex;
+}
+
+.work-list .item img{
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.work-list .item .details{
+    background-color: #ffffb3;
+    padding : 30px 250px 60px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.work-list .item .details h3{
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: -180px;
+}
+.work-list .item .details h3.date{
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+    .work .page-title{
+        padding: 80px 0px 20px 150px;
+        font-size: 30px;
+    }
+
+.work .page-title i{
+    display: flex;
+    margin-top: 9px;   
+}
+
+    main{
+        padding: 60px 30px 60px 120px;
+        display: flex;
+    }
+
+    main .school{
+        display: flex;
+    flex-direction: column;
+    gap: 40px;  
+    }
+
+main .school img{
+    width: 450px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+main .info h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+main .info .det1{
+    padding: 30px 129px 10px 70px;
+    background-color: #ffffb3;
+    margin-right: 100px;
+    width: 800px;
+    height: 259px;
+    margin-left: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+main .info2 .det2{
+    padding: 30px 129px 10px 70px;
+    background-color: #ffffb3;
+    margin-right: 100px;
+    margin-top:38px;
+    width: 800px;
+    height: 259px;
+    margin-left: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.edu-page{
+    padding: 50px 0px 0px 130px ;
+}
+
+.edu-page h2{
+    font-size: 30px;
+}
+
+.work .abouts{
+    padding: 80px 0px 20px 150px;
+    font-size: 30px;
+    display: flex;
+}
+
+.work .abouts i{
+    margin-top: 8px;
+}
+
+.content .container{
+    background-color: #dbedf2;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 1200px;
+    border-radius: 30px;
+}
+
+.content .container img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.content .container h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.container .container .about>p{
+    text-align: justify;
+
+}
+
+.content .container .about .email{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media  screen and (max-width: 1400px){
+
+    nav{
+        padding: 20px 60px;
+    }
+
+    .main{
+        padding: 0 60px;
+    }
+
+    .recent{
+        padding: 60px;
+    }
+
+    .page-title{
+        padding: 80px 60px 20px;
+    }
+    
+}
