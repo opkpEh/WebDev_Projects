@@ -1,7 +1,7 @@
 const songList = [
-    { name: "Where we Started", artist: "No Copyright Sounds", src: "assets/1.mp3", cover: "assets/1.jpg" },
-    { name: "Under the Influence", artist: "Chris Brown", src: "assets/2.mp3", cover: "assets/2.jpg" },
-    { name: "After Hours", artist: "The Weeknd", src: "assets/3.mp3", cover: "assets/3.jpg" }
+    { name: "Where we Started", artist: "No Copyright Sounds", src: "Assets/1.mp3", cover: "Assets/1.jpg" },
+    { name: "Under the Influence", artist: "Chris Brown", src: "Assets/2.mp3", cover: "Assets/2.jpg" },
+    { name: "After Hours", artist: "The Weeknd", src: "Assets/3.mp3", cover: "Assets/3.jpg" }
   ];
   
   const artistName = document.querySelector('.artist');
