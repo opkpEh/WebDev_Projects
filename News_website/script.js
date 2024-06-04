@@ -25,8 +25,8 @@ function fetchNews(isSearching) {
             newsContainer.innerHTML = '';
         }
 
-        const articlesWithImage = data.articles.filter(article => article.urlToImage);
-
+       const articlesWithImage = data.articles.filter(article => typeof article.urlToImage === 'string' && article.urlToImage.trim().length > 0);
+        
         if (articlesWithImage.length === 0 || articlesWithImage.length === lastArticleCount) {
             displayNoMoreNews();
             return;
