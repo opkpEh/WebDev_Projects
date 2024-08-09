@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #387D7A;
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    padding: 10px;
+}
+
+.container .songinfo{
+    background-color: #395E66;
+    margin: 0 15px;
+    padding: 15px 15px 5px 150px;
+    border-radius: 15px 15px;
+}
+
+.container .songinfo .songname{
+    color: #A4778B;
+    font-size: 14px;
+    margin: 3px 0 20px;
+}
+
+.container .songinfo .artist{
+    color: #DEDEE0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .songinfo .progress-bar{
+    height: 5px;
+    background-color: #B8DBD9 ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container .songinfo .progress-bar .fillbar{
+    width: 55%;
+    height: 100%;
+    border-radius: 20px;
+    background: #a4617f;
+}
+
+.container .songinfo .time{
+    font-size: 15px;
+    color: #b9b9b9;
+    margin: 10px 0;
+}
+
+.container .disk .active{
+    animation: rotate 3s linear 0s infinite forwards;
+}
+
+.container .disk .cover{
+    background: url("Assets/1.jpg");   
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.container .disk .circle{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 16%;
+    top: 29%;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.container .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #003844;
+    width: 450px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.container .controls #play{
+    background-color: #A755C2;
+    color: #fff;
+    padding:15px 15px 14px 17px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.container .controls #play:hover{
+    background:#640983;
+}
+
+.container .controls i{
+    padding: 30px 8px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #B07C9E;
+    transition: all 0.3s ease;
+}
+
+.container .controls i:hover{
+    color: #862363;
+}
+
+#cover {
+    transition: transform 0.3s ease-in-out;
+    animation: rotate 10s linear infinite;
+    animation-play-state: paused; 
+  }
+  
+  #cover.rotate {
+    animation-play-state: running; 
+  }
+
+  .volume-control {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .volume-control i {
+    margin-right: 10px;
+  }
+  
+  .volume-slider {
+    align-items: center;
+    width: 100px;
+    -webkit-appearance: none;
+    background: transparent;
+  }
+  
+  .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px; /* Adjust this value to move the thumb up or down */
+  }
+  .volume-slider::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

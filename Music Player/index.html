@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="songinfo">
+            <div class="artist"></div>
+                <div class="songname"></div>
+                <div class="progress-bar">
+                    <div class="fillbar"></div>
+                </div>
+                <div class="time">0:00 - 0:00</div>
+        </div>
+        <div class="disk">
+            <div class="circle"></div>
+                <div id="cover" class="cover"></div>
+        </div>
+
+        <div class="controls">
+            <i id="prev" class="prev fa-solid fa-backward"></i>
+            <i id="play" class="play fa-solid fa-play"></i>
+            <i id="next" class="next fa-solid fa-forward"></i>
+        </div>
+
+        <div class="volume-control">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" min="0" max="100" value="100" class="volume-slider">
+          </div>
+
+    </div>
+
+    <script src = "script.js"></script>
+ 
+</body>
+</html>
